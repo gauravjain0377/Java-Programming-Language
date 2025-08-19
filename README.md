@@ -1,6 +1,3 @@
-# Java Programming Language
-
-
 # ☕ Java Learning Repository
 
 Welcome to my **Java Learning Repository**! 🚀  
