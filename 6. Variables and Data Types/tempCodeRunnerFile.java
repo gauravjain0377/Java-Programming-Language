@@ -1,1 +1,2 @@
-System.out.println(b);
+String input = scn.next();
+        // System.out.println("You entered: " + input);
