@@ -9,7 +9,14 @@ public class Input {
         // String name = scn.nextLine();
         // System.out.println("Your name is: " + name);
 
-        int number = scn.nextInt();
+        // int number = scn.nextInt();
+        // System.out.println("You entered: " + number);
+
+        // byte number = scn.nextByte();
+        // System.out.println("You entered: " + number);
+
+        System.out.print("Enter a float number:");
+        float number = scn.nextFloat();
         System.out.println("You entered: " + number);
     }
 }
