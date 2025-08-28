@@ -1,0 +1,122 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "BinomialCoefficient",
+      "request": "launch",
+      "mainClass": "BinomialCoefficient",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "Factorial",
+      "request": "launch",
+      "mainClass": "Factorial",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "Product",
+      "request": "launch",
+      "mainClass": "Product",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "Swap",
+      "request": "launch",
+      "mainClass": "Swap",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "Sum",
+      "request": "launch",
+      "mainClass": "Sum",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "Functions",
+      "request": "launch",
+      "mainClass": "Functions",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "HalfPyramidPattern",
+      "request": "launch",
+      "mainClass": "HalfPyramidPattern",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "HollowRechtanglePattern",
+      "request": "launch",
+      "mainClass": "HollowRechtanglePattern",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "CharacterPattern",
+      "request": "launch",
+      "mainClass": "CharacterPattern",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "HaldPyramidPattern",
+      "request": "launch",
+      "mainClass": "HaldPyramidPattern",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "InvertedStarPattern",
+      "request": "launch",
+      "mainClass": "InvertedStarPattern",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "StarPattern",
+      "request": "launch",
+      "mainClass": "StarPattern",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "Example",
+      "request": "launch",
+      "mainClass": "Example",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "ContinueStatement",
+      "request": "launch",
+      "mainClass": "ContinueStatement",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
