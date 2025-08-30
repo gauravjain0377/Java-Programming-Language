@@ -1,25 +1,20 @@
-import java.util.*;
-
 public class Example {
+    
+    public static void binToDec(int binNum) {
+        int pow = 0;
+        int decNum = 0;
+        
+        while(binNum > 0) {
+             int lastDigit = binNum % 10;
+        decNum = decNum + (lastDigit * (int)Math.pow(2, pow));
+        pow++;
+        binNum = binNum / 10;
+    }
+    System.out.println("The decimal of the binary number is: " + decNum);
+        }
+       
+    
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int n = scn.nextInt();
-
-        if(n == 2) {
-            System.out.println("2 is prime");
-        }
-   
-        for(int i=2; i<=n-1; i++) {
-            if(n % i == 0) {
-                System.out.println("The number " + n + " is not prime");
-            }
-            else {
-                System.out.println("The number " + n + " is prime");
-            }
-        }
-
-
-        scn.close();
+        binToDec(101);
     }
 }

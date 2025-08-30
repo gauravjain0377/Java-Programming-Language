@@ -3,6 +3,62 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BinarytoDecimal",
+      "request": "launch",
+      "mainClass": "BinarytoDecimal",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "Practice",
+      "request": "launch",
+      "mainClass": "Practice",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "PrimeNumberRange",
+      "request": "launch",
+      "mainClass": "PrimeNumberRange",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "PrimeNumberOptimized",
+      "request": "launch",
+      "mainClass": "PrimeNumberOptimized",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "PrimeNo",
+      "request": "launch",
+      "mainClass": "PrimeNo",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "FnOverloadingusingDataTypes",
+      "request": "launch",
+      "mainClass": "FnOverloadingusingDataTypes",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "Calculator",
+      "request": "launch",
+      "mainClass": "Calculator",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
       "name": "BinomialCoefficient",
       "request": "launch",
       "mainClass": "BinomialCoefficient",
