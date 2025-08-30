@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "InvertedandRotatedHalfPyramid",
+      "request": "launch",
+      "mainClass": "InvertedandRotatedHalfPyramid",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "HollowRectangle",
+      "request": "launch",
+      "mainClass": "HollowRectangle",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "Addition",
+      "request": "launch",
+      "mainClass": "Addition",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "MathOperations",
+      "request": "launch",
+      "mainClass": "MathOperations",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "Palindrome",
+      "request": "launch",
+      "mainClass": "Palindrome",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "EvenOdd",
+      "request": "launch",
+      "mainClass": "EvenOdd",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "DecimaltoBinary",
+      "request": "launch",
+      "mainClass": "DecimaltoBinary",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
       "name": "BinarytoDecimal",
       "request": "launch",
       "mainClass": "BinarytoDecimal",
