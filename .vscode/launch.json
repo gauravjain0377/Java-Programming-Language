@@ -3,6 +3,83 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LinearSearch",
+      "request": "launch",
+      "mainClass": "LinearSearch",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "ArraysasFunctionArguments",
+      "request": "launch",
+      "mainClass": "ArraysasFunctionArguments",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "InputArray",
+      "request": "launch",
+      "mainClass": "InputArray",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "PalindromePattern",
+      "request": "launch",
+      "mainClass": "PalindromePattern",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "NumberPyramid",
+      "request": "launch",
+      "mainClass": "NumberPyramid",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "DiamondPattern",
+      "request": "launch",
+      "mainClass": "DiamondPattern",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "HollowRhombus",
+      "request": "launch",
+      "mainClass": "HollowRhombus",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "SolidRhombus",
+      "request": "launch",
+      "mainClass": "SolidRhombus",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "ButterflyPattern",
+      "request": "launch",
+      "mainClass": "ButterflyPattern",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "Zero_One_Triangle",
+      "request": "launch",
+      "mainClass": "Zero_One_Triangle",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "HalfPyramidNumber",
+      "request": "launch",
+      "mainClass": "HalfPyramidNumber",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
       "name": "InvertedandRotatedHalfPyramid",
       "request": "launch",
       "mainClass": "InvertedandRotatedHalfPyramid",
@@ -211,8 +288,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "f:/Java Programming Language/JavaCollege",
+      "program": "f:/Java Programming Language/JavaCollege/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
       "setupCommands": [
