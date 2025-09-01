@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BinarySearch",
+      "request": "launch",
+      "mainClass": "BinarySearch",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "LargestNumber",
+      "request": "launch",
+      "mainClass": "LargestNumber",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
+      "name": "LinearSearching",
+      "request": "launch",
+      "mainClass": "LinearSearching",
+      "projectName": "Java Programming Language_15e61082"
+    },
+    {
+      "type": "java",
       "name": "LinearSearch",
       "request": "launch",
       "mainClass": "LinearSearch",
@@ -288,8 +309,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "f:/Java Programming Language/JavaCollege",
-      "program": "f:/Java Programming Language/JavaCollege/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
       "setupCommands": [
