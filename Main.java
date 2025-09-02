@@ -1,22 +1,34 @@
-import java.util.*;
-
 public class Main {
     
-    public static void halfPyramidNumber(int n) {
-        for(int i=1; i<=n; i++) {
-            for(int j=1; j<=n-i+1; j++) {
-                System.out.print(j + " ");
+public static int binarySearch(int numbers[], int key) {
+        int start = 0;
+        int end = numbers.length - 1;
+        
+        while(start <= end) {
+            int mid = (start + end) / 2;
+            if(numbers[mid] == key) {
+                return mid;
             }
-            System.out.println();
-    }
-
+            if(numbers[mid] < key) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+        }
+        return -1;
     }
     
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int n = scn.nextInt();
+        int numbers[] = {2,4,5,6,8,10, 12, 14, 16};
+        int key = 10;
         
-        halfPyramidNumber(n);
+        int index = binarySearch(numbers, key);
+        if(index == -1) {
+            System.out.println("Not Found");
+        }
+        else {
+            System.out.println("The key is found at index: " + index);
+        }
+        
     }
 }
