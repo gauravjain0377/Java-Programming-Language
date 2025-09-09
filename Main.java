@@ -1,22 +1,24 @@
+import java.util.*;
+
+
 public class Main {
-    
-public static void printSubArrays(int numbers[]) {
-        
-        for(int i=0; i<numbers.length; i++) {
-            for(int j=i; j<numbers.length; i++) {
-                System.out.print("SubArrays: ");
-                for(int k=i; k<=j; k++) {
-                    System.out.print(numbers[k] + " ");
-                }
-                System.out.println();
-                
-            }
-        }
-        
+  public static void main(string[] args) {
+    Scanner scn = new Scanner(System.in);
+    char ch = scn.next().charAt();
+
+    if((ch >= 'a' && ch <= 'z')  || (ch <= 'A' && ch <= 'Z')) {
+      if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' 
+         || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ) {
+        System.out.println("Vowel");
+         }
+      else{
+        System.out.println("Consonant");
+      }
+      else{
+      System.out.println("Not an alphabet");
+      }
     }
+
     
-    public static void main(String[] args) {
-        int numbers[] = {2, 4, 6, 8, 10};
-        printSubArrays(numbers);
-    }
+  }
 }
