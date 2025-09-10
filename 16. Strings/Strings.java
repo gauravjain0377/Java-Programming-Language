@@ -8,6 +8,7 @@ public class Strings {
 
         // Strings are IMMUTABLE
 
+        System.out.println(arr);
         System.out.println(str);
         System.out.println(str2);
 

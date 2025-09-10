@@ -9,7 +9,7 @@ public class SubString {
     }
     public static void main(String[] args) {
          String str = "Hello World";
-         System.out.println(str.substring(0, 5));
+         System.out.println(str.substring(0, 5));  // Java Inbuilt SubString Function
 
 
          System.out.println(subString(str, 0, 5));

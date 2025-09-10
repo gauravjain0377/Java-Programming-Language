@@ -1,24 +1,15 @@
-import java.util.*;
-
-
 public class Main {
-  public static void main(string[] args) {
-    Scanner scn = new Scanner(System.in);
-    char ch = scn.next().charAt();
 
-    if((ch >= 'a' && ch <= 'z')  || (ch <= 'A' && ch <= 'Z')) {
-      if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' 
-         || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ) {
-        System.out.println("Vowel");
-         }
-      else{
-        System.out.println("Consonant");
-      }
-      else{
-      System.out.println("Not an alphabet");
-      }
-    }
+  public static int shortestPath(int path[]) {
+    int x = 0;
+    int y = 0;
 
     
+   
+  }
+  public static void main(String[] args) {
+    int path[] = {WNEENSWNES};
+    System.out.println(shortestPath(path));
+
   }
 }
