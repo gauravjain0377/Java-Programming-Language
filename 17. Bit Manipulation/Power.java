@@ -2,7 +2,7 @@
 
 /* 4 = 2 power 2, 
  8  = 2 power 3,
- 7 = 2 power n 
+ 7 = 2 power => NO, not divisible.
 
  4 -> 100
  3 -> 011

@@ -21,6 +21,12 @@ public class UpdateIthBit {
         } else {
             return setIthBit(n, i);
         }
+
+        // n = clearIthBit(n, i);
+        // int BitMask = newBit << i;
+        // return n | BitMask;
+
+
     }
 
     public static void main(String[] args) {

@@ -5,7 +5,7 @@ public class FastExponentiation {
     public static int fastExponentiation(int a, int n) {
         int ans = 1;
         while (n > 0) {
-            if ((n & 1) != 0) {
+            if ((n & 1) != 0) {   // check least significant bit
                 ans = ans * a;
             }
             a = a * a;

@@ -20,7 +20,6 @@ public class ClearIthBit {
 
 
 
-        scn.close();
-        
+        scn.close(); 
     }
 }
