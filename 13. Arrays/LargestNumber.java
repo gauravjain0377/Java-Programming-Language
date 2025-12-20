@@ -29,7 +29,6 @@ public class LargestNumber {
         int size = scn.nextInt();
 
         int numbers[] = new int[size];
-
        
         System.out.println("Enter " + size + " numbers:");
         for (int i = 0; i < size; i++) {
@@ -38,6 +37,8 @@ public class LargestNumber {
 
         
         System.out.println("The largest number is: " + getLargest(numbers));
+
+        scn.close();
     }
 }
 
