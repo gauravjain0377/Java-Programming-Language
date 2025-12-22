@@ -10,7 +10,7 @@ public class GetIthbit {
             System.out.println(1);   // i-th bit is 1
         }
     }
-
+    
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
 

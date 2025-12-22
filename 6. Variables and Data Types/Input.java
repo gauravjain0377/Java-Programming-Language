@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class Input {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
@@ -18,5 +17,7 @@ public class Input {
         System.out.print("Enter a float number:");
         float number = scn.nextFloat();
         System.out.println("You entered: " + number);
+
+        scn.close();
     }
 }
