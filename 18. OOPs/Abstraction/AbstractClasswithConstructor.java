@@ -1,9 +1,9 @@
-public class AbstractClassConst {
+public class AbstractClasswithConstructor {
     public static void main(String[] args) {
         Mustang myHorse = new Mustang();
         // Animal -> Horse -> Mustang
 
-        
+
     }
 }
 
@@ -38,15 +38,5 @@ class Horse extends Animal {
 class Mustang extends Horse {
     Mustang() {
         System.out.println("Mustang Constructor called");
-    }
-}
-
-class Octopus extends Animal {
-     void changeColor() {
-        color = "red";
-    }
-
-    void walk() {
-        System.out.println("walks on 2 legs");
     }
 }

@@ -6,8 +6,9 @@ public class AbstractClass {
         System.out.println(h.color);
 
         Octopus o = new Octopus();
-        h.eat();
-        h.walk();
+        o.eat();
+        o.walk();
+        System.out.println(o.color);
 
         // Animal a = new Animal();  =?> this is wrong.
     }
@@ -30,7 +31,6 @@ abstract class Animal {
 class Horse extends Animal {
     void changeColor() {
         color = "dark brown";
-
     }
 
     void walk() {
