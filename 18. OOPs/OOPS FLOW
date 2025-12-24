@@ -1,0 +1,33 @@
+OOPS
+ |
+ |-- Class
+ |     |
+ |     |-- Constructor
+ |     |-- Data Members
+ |     |-- Methods
+ |
+ |-- Object
+ |
+ |-- Encapsulation
+ |     |
+ |     |-- Data Hiding
+ |     |-- Access Modifiers
+ |
+ |-- Inheritance
+ |     |
+ |     |-- Single
+ |     |-- Multilevel
+ |     |-- Hierarchical
+ |     |-- Hybrid (not with classes but with interfaces can be done in java code)
+ |     |-- Multiple (not with classes but with interfaces can be done in java code)
+
+ |
+ |-- Polymorphism
+ |     |
+ |     |-- Compile-time (Method Overloading)
+ |     |-- Runtime (Method Overriding)
+ |
+ |-- Abstraction
+       |
+       |-- Abstract Class
+       |-- Interface

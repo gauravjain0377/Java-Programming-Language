@@ -1,4 +1,5 @@
-public class ShallowCopy {
+package Constructors;
+public class CopyConstructor {
   public static void main(String[] args) {
         Student s1 = new Student();
         s1.name = "Gaurav";
@@ -27,14 +28,13 @@ class Student {
     String password;
     int marks[];
 
-    // Shallow Copy Constructor
+    // copy Constructor
     Student(Student s1) {
         marks = new int[3];
         this.name = s1.name;
         this.rollno = s1.rollno;
         this.marks = s1.marks;
     }
-
 
     Student() {
         marks = new int[3];
