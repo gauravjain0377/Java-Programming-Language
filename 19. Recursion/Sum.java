@@ -7,7 +7,7 @@ public class Sum {
             return 1;
         }
         int Snm1 = Sum(n - 1);
-        int Sn = n + Snm1;
+         int Sn = n + Snm1;
         return Sn;
         
     }
