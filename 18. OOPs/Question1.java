@@ -8,6 +8,7 @@ public class Question1 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter real part of first complex number: ");
         int a = sc.nextInt();
 
