@@ -21,7 +21,7 @@ public class Duplicates {
     }
 
     public static void main(String[] args) {
-        String str = "aaabuffffggghiuyyy";
+        String str = "gauravjain";
         removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
     }
 }
