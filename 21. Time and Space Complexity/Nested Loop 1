@@ -1,0 +1,8 @@
+for(int i=0; i<n; i++) {
+    for(int j=i+1; j<n; j++) {
+        // some constant work is done in this loop
+    }
+}
+
+
+// Time Complexity: O(n²)
