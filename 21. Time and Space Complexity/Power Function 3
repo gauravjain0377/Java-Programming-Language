@@ -1,0 +1,20 @@
+// Recursion
+// Power Function 3
+
+
+public static int power(int a, int n) {
+    if(n == 0) {
+        return 1;
+    }
+
+    int halfPower = power3(a, n/2);
+    int halfPowerSq = halfPower * halfPower
+
+    if(n%2 != 0) {   // a is odd
+        return a * halfPowerSq;
+    }
+
+    return halfPowerSq;
+}
+
+// Time Complexity: O(logn)
