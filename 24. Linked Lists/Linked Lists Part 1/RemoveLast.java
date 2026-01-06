@@ -1,4 +1,4 @@
-public class RemoveFirst {
+public class RemoveLast {
 
     public static class Node {
         int data;
@@ -78,24 +78,31 @@ public class RemoveFirst {
         temp.next = newNode;
     }
 
-    public int removeFirst() {
+    public int removeLast() {
         if(size == 0) {
             System.out.println("LinkedList is empty");
             return Integer.MIN_VALUE;
-        } else if (size == 1) {
+        } else if(size == 1) {
             int val = head.data;
             head = tail = null;
             size = 0;
             return val;
         }
-        int val = head.data;
-        head = head.next;
+        // previous: i = size - 2
+        Node prev = head;
+        for(int i=0; i<size-2; i++) {
+            prev = prev.next;
+        }
+
+        int val = prev.next.data; // tail.data
+        prev.next = null;
+        tail = prev;
         size--;
         return val;
     }
 
     public static void main(String[] args) {
-        RemoveFirst ll = new RemoveFirst ();   // ll = linked list
+        RemoveLast ll = new RemoveLast ();   // ll = linked list
      
         ll.addFirst(2);
         ll.addFirst(8);
@@ -103,14 +110,11 @@ public class RemoveFirst {
         ll.addLast(4);
         ll.add(2, 9);
 
-        ll.removeFirst();
+        ll.removeLast();
         ll.print();
 
         System.out.println(ll.size);
     }
 }
-
-
-
 
 

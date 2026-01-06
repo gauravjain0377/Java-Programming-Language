@@ -1,4 +1,13 @@
-public class RemoveFirst {
+// Palindrome => 1221, 1441, madam, naman, racecar
+// Solution: 1. Find midNode
+// 2. 2nd half - Reverse
+// 3. Check if 1st half(left) = 2nd half(right)
+
+// slow-fast
+// (turtle) -> slow = head -> +1
+// (hare) -> fast = head -> +2
+
+public class Palindrome {
 
     public static class Node {
         int data;
@@ -78,39 +87,64 @@ public class RemoveFirst {
         temp.next = newNode;
     }
 
-    public int removeFirst() {
-        if(size == 0) {
-            System.out.println("LinkedList is empty");
-            return Integer.MIN_VALUE;
-        } else if (size == 1) {
-            int val = head.data;
-            head = tail = null;
-            size = 0;
-            return val;
+    // Slow-Fast Approach
+    public Node findMid(Node head) {
+        Node slow = head;
+        Node fast = head;
+
+        while(fast != null && fast.next != null) {
+            slow = slow.next;   //+1
+            fast = fast.next.next;  //+2
         }
-        int val = head.data;
-        head = head.next;
-        size--;
-        return val;
+        return slow;   // slow is my midNode
     }
 
+    public boolean checkPalindrome() {
+        if(head == null || head.next == null) {
+            return true;
+
+        }
+        // step 1 - find mid
+        Node midNode = findMid(head);
+
+        // step 2 - reverse 2nd half
+        Node prev = null;
+        Node curr = midNode;
+        Node next;
+        while(curr != null) {
+            next = curr.next;
+            curr.next= prev;
+            prev = curr;
+            curr = next;
+        }
+
+        Node right = prev;  // right half head
+        Node left = head;
+
+        // step 3 - checl left half and right half
+        while(right != null) {
+            if(left.data != right.data) {
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+        return true;
+    }
+   
     public static void main(String[] args) {
-        RemoveFirst ll = new RemoveFirst ();   // ll = linked list
-     
-        ll.addFirst(2);
-        ll.addFirst(8);
-        ll.addLast(3);
-        ll.addLast(4);
-        ll.add(2, 9);
+        Palindrome ll = new Palindrome ();   // ll = linked list
 
-        ll.removeFirst();
+        ll.addLast(1);
+        ll.addLast(2);
+        ll.addLast(2);
+        ll.addLast(1);
+        // ll.addLast(2);
+        
+
         ll.print();
+        System.out.println(ll.checkPalindrome());
 
-        System.out.println(ll.size);
+  
     }
 }
-
-
-
-
-

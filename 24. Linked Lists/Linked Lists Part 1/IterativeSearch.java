@@ -1,4 +1,7 @@
-public class RemoveFirst {
+// Search for a key in a Linked List. Return the position where it is found.
+// If not found, return -1.
+
+public class IterativeSearch {
 
     public static class Node {
         int data;
@@ -78,24 +81,23 @@ public class RemoveFirst {
         temp.next = newNode;
     }
 
-    public int removeFirst() {
-        if(size == 0) {
-            System.out.println("LinkedList is empty");
-            return Integer.MIN_VALUE;
-        } else if (size == 1) {
-            int val = head.data;
-            head = tail = null;
-            size = 0;
-            return val;
+    public int Search(int key) {   // O(n)
+        Node temp = head;
+        int i = 0;
+
+        while(temp != null) {
+            if(temp.data == key) {  // key found
+                return i;
+            }
+            temp = temp.next;
+            i++;
         }
-        int val = head.data;
-        head = head.next;
-        size--;
-        return val;
+
+        return -1;  // key not found
     }
 
     public static void main(String[] args) {
-        RemoveFirst ll = new RemoveFirst ();   // ll = linked list
+        IterativeSearch ll = new IterativeSearch ();   // ll = linked list
      
         ll.addFirst(2);
         ll.addFirst(8);
@@ -103,14 +105,17 @@ public class RemoveFirst {
         ll.addLast(4);
         ll.add(2, 9);
 
-        ll.removeFirst();
         ll.print();
 
-        System.out.println(ll.size);
+        int index = ll.Search(3);
+        int index2 = ll.Search(10);
+
+        System.out.println();
+        System.out.println("The key is at index: " + index);
+        System.out.println("The key is at index: " + index2);
+  
     }
 }
-
-
 
 
 

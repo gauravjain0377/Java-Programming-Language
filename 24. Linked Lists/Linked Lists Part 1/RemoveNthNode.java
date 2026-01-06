@@ -1,4 +1,7 @@
-public class RemoveFirst {
+// Find & Remove Nth node from End
+// Iterative Approach
+
+public class RemoveNthNode {
 
     public static class Node {
         int data;
@@ -78,24 +81,35 @@ public class RemoveFirst {
         temp.next = newNode;
     }
 
-    public int removeFirst() {
-        if(size == 0) {
-            System.out.println("LinkedList is empty");
-            return Integer.MIN_VALUE;
-        } else if (size == 1) {
-            int val = head.data;
-            head = tail = null;
-            size = 0;
-            return val;
+    public void deleteNthfromEnd(int n) {
+        // calculate size
+        int size = 0;
+        Node temp = head;
+
+        while(temp != null) {
+            temp = temp.next;
+            size++;
         }
-        int val = head.data;
-        head = head.next;
-        size--;
-        return val;
+        if(n == size) {
+            head = head.next;   // remove First
+            return;
+        }
+
+        // size - n
+        int i = 1;
+        int indexToFind = size - n;
+        Node prev = head;
+        while(i < indexToFind) {
+            prev = prev.next;
+            i++;
+        }
+        prev.next = prev.next.next;
+        return;
     }
 
+   
     public static void main(String[] args) {
-        RemoveFirst ll = new RemoveFirst ();   // ll = linked list
+        RemoveNthNode ll = new RemoveNthNode ();   // ll = linked list
      
         ll.addFirst(2);
         ll.addFirst(8);
@@ -103,14 +117,12 @@ public class RemoveFirst {
         ll.addLast(4);
         ll.add(2, 9);
 
-        ll.removeFirst();
+        ll.print();
+        ll.deleteNthfromEnd(3);
         ll.print();
 
-        System.out.println(ll.size);
+  
     }
 }
-
-
-
 
 
