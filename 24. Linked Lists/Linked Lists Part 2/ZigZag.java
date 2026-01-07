@@ -2,6 +2,7 @@
 /* 1. Find mid node
    2. 2nd half reverse
    3. Alternate Merging     */
+
 public class ZigZag {
 
      public static class Node {
@@ -58,29 +59,57 @@ public class ZigZag {
         }
         System.out.println("null");
     }
-
-       public Node findMid(Node head) {
-        Node slow = head;
-        Node fast = head;
-
-        while(fast != null && fast.next != null) {
-            slow = slow.next;   //+1
-            fast = fast.next.next;  //+2
-        }
-        return slow;   // slow is my midNode
-    }
     
-        private Node getMid(Node head) {
+    public void zigZag() {
+        // find mid
         Node slow = head;
         Node fast = head.next;
-
         while(fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
-        return slow;  // mid node
+        Node mid = slow;
+
+        // reverse 2nd half
+        Node curr = mid.next;
+        mid.next = null;
+        Node prev = null;
+        Node next;
+
+        while(curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        Node left = head;
+        Node right = prev;
+        Node nextL, nextR;
+
+        // alternate merge - zig-zag merge
+        while(left != null && right != null) {
+            nextL = left.next;
+            left.next = right;
+            nextR = right.next;
+            right.next = nextL;
+
+            left = nextL;
+            right = nextR;
+        }
     }
     public static void main(String[] args) {
-        
+        ZigZag ll = new ZigZag();
+        ll.addLast(1);
+        ll.addLast(2);
+        ll.addLast(3);
+        ll.addLast(4);
+        ll.addLast(5);
+        ll.addLast(6);
+        // 1 -> 2 -> 3 -> 4 -> 5 -> 6
+
+        ll.print();
+        ll.zigZag();
+        ll.print();
     }
 }
