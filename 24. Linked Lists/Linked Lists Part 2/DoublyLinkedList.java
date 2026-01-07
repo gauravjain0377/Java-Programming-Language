@@ -41,10 +41,6 @@ public class DoublyLinkedList {
         System.out.println("null");
     }
 
-    public void removeFIrst() {
-
-    }
-
     public int removeFirst() {
         if(head == null) {
             System.out.println("Doubly LinkedList is empty");
