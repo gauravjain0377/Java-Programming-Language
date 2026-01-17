@@ -34,7 +34,6 @@ public class LargestNumber {
         for (int i = 0; i < size; i++) {
             numbers[i] = scn.nextInt();
         }
-
         
         System.out.println("The largest number is: " + getLargest(numbers));
 

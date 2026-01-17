@@ -1,20 +1,22 @@
+import java.util.*;
+
 public class Example {
-    
-    public static void binToDec(int binNum) {
-        int pow = 0;
-        int decNum = 0;
-        
-        while(binNum > 0) {
-             int lastDigit = binNum % 10;
-        decNum = decNum + (lastDigit * (int)Math.pow(2, pow));
-        pow++;
-        binNum = binNum / 10;
-    }
-    System.out.println("The decimal of the binary number is: " + decNum);
-        }
-       
-    
     public static void main(String[] args) {
-        binToDec(101);
+        Scanner scn = new Scanner(System.in);
+        System.out.print("Enter a String: ");
+        String s = scn.nextLine();
+
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+
+            // if (ch >= '0' && ch <= '9') {
+            //     count++;
+            // }
+            if(Character.isDigit(ch)) {
+                count++;
+            }
+        }
+        System.out.println(count);
     }
 }

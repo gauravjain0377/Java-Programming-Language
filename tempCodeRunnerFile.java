@@ -1,0 +1,1 @@
+return 1 + countDigits(s, index + 1);
