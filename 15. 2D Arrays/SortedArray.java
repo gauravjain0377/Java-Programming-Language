@@ -13,7 +13,7 @@ public class SortedArray {
                 row++;
             }
         }
-        System.out.println("Key not found");
+        System.out.println("Key not found"); 
         return false;
     }
 
@@ -26,4 +26,4 @@ public class SortedArray {
 
       staircaseSearch(matrix, key);
     }
-}
+}  
