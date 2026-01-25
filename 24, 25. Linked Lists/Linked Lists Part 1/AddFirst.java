@@ -38,7 +38,5 @@ public class AddFirst {
         AddFirst ll = new AddFirst();
         ll.addFirst(1);
         ll.addFirst(2);
-
-
     }
 }
