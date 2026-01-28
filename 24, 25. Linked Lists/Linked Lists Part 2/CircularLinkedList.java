@@ -104,4 +104,4 @@ class CircularLinkedList {
         deleteNode(last, 8);
         traverse(last);
     }
-}
+} 

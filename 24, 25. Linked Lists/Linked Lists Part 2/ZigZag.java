@@ -13,7 +13,7 @@ public class ZigZag {
             this.data = data;
             this.next = null;
         }
-    }
+    } 
 
     public static Node head;
     public static Node tail;

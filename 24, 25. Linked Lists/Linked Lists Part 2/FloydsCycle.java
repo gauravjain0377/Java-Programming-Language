@@ -24,7 +24,7 @@ public class FloydsCycle {
             slow = slow.next;   // +1
             fast = fast.next.next;   // +2
             if(slow == fast) {
-                return true;
+                return true;  // cycle exist
             }
         }
         return false;   // cycle does not exist
