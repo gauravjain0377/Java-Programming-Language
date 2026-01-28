@@ -1,22 +1,35 @@
-import java.util.*;
-
 public class Example {
-    public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        System.out.print("Enter a String: ");
-        String s = scn.nextLine();
 
-        int count = 0;
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
+    public static int array(int nums[], int target) {
+        int left = 0;
+        int right = nums.length - 1;
 
-            // if (ch >= '0' && ch <= '9') {
-            //     count++;
-            // }
-            if(Character.isDigit(ch)) {
-                count++;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            }
+            if (nums[left] <= nums[mid]) {
+    if (target >= nums[left] && target < nums[mid]) {
+               right = mid - 1;
+} else {
+left = mid + 1;
+                }
+            }
+            else {
+        if (target > nums[mid] && target <= nums[right]) {
+    left = mid + 1;
+                } else {
+ right = mid - 1;
+                }
             }
         }
-        System.out.println(count);
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int nums[] = {4, 5, 6, 7, 0, 1, 2};
+        int target = 0;
+        System.out.println(array(nums, target));
     }
 }

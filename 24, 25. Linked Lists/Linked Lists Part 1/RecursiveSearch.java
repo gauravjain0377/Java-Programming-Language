@@ -14,7 +14,7 @@ public class RecursiveSearch {
     }
 
     public static Node head;
-    public static Node tail;
+    public static Node tail; 
     public static int size;
 
     public void addFirst(int data) {

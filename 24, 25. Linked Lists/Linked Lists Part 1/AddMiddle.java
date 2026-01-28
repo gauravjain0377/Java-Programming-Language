@@ -55,6 +55,8 @@ public class AddMiddle {
         System.out.println("null");
     }
 
+
+    // Add in the middle -> add(index, data)
     public void add(int index, int data) {
         if(index == 0) {
             addFirst(data);

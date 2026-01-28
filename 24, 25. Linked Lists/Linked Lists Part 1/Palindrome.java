@@ -1,4 +1,5 @@
 // Palindrome => 1221, 1441, madam, naman, racecar
+
 // Solution: 1. Find midNode
 // 2. 2nd half - Reverse
 // 3. Check if 1st half(left) = 2nd half(right)
@@ -102,7 +103,6 @@ public class Palindrome {
     public boolean checkPalindrome() {
         if(head == null || head.next == null) {
             return true;
-
         }
         // step 1 - find mid
         Node midNode = findMid(head);
@@ -121,7 +121,7 @@ public class Palindrome {
         Node right = prev;  // right half head
         Node left = head;
 
-        // step 3 - checl left half and right half
+        // step 3 - check left half and right half
         while(right != null) {
             if(left.data != right.data) {
                 return false;

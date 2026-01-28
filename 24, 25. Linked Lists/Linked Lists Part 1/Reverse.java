@@ -78,7 +78,7 @@ public class Reverse {
         temp.next = newNode;
     }
 
-    public void reverse() {
+    public void reverse() {   //   O(n)
         Node prev = null;
         Node curr = tail = head;
         Node next;
