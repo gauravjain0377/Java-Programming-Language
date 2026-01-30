@@ -34,5 +34,6 @@ public class ReverseStack {
         reverseStack(s);
         printStack(s);
     }
-}
+} 
+
 

@@ -35,3 +35,31 @@ public class NextGreaterElement {
         System.out.println();
     }
 }
+
+
+// There are different forms for this question.
+/* So, 1. next Greater Right Side is above the Question
+
+   2. next Greater Left Side - so in code we just have to change the loop.
+   for(int i=0; i<=arr.length-1; i++) {
+            // 1. while loop
+            while(!s.isEmpty() && arr[s.peek()] <= arr[i]) {
+                s.pop();
+            }
+
+    3. next Smaller Right Side - So in code , just change  < to >, see below.
+                for(int i=arr.length-1; i>=0; i--) {
+            // 1. while loop
+            while(!s.isEmpty() && arr[s.peek()] >= arr[i]) {
+                s.pop();
+            }
+
+
+    4. next Smaller Left Side - so in code, the changes will be        
+         for(int i=0; i<=arr.length-1; i++) {
+            // 1. while loop
+            while(!s.isEmpty() && arr[s.peek()] >= arr[i]) {
+                s.pop();
+            }
+            
+            */

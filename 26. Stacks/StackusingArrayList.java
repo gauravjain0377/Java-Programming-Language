@@ -29,7 +29,6 @@ public class StackusingArrayList {
                 return -1;
             }
            return list.get(list.size() - 1);
-
         }
     }
      public static void main(String[] args) {
