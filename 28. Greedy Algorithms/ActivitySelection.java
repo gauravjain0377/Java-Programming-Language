@@ -1,5 +1,8 @@
 /* Activity Selection
-// Question and explanation from the Notes.  */
+// Question and explanation from the Notes. 
+In this question end time sorted
+and in file named = ActivitySelectionnotSorted have end time not sorted see that also.
+ */
 
 import java.util.*;
 public class ActivitySelection {
@@ -9,15 +12,7 @@ public class ActivitySelection {
 
 
         /* If end is Not sorted 
-        itn activities[][] = new int[start.length][3];
-        for(int i=0; i<start.length; i++) {
-        activities[i][0] = i;
-        activities[i][1] = start[i]; 
-        activities[i][2] = end[i];
-    }
-
-    // lambda function -> shortform
-    Arrays.sort(activities, Comparator.comparingDouble(o -> o[2]));
+       Go to file named = ActivitySelectionnotSorted.java have end time not sorted see that also.
         */
 
         
