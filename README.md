@@ -7,7 +7,7 @@ It covers everything from the basics to Object-Oriented Programming (OOP), Data 
 ---
 
 ## 📌 Repository Goals
-- Strengthen Java fundamentals  
+- Strengthen Java fundamentals and Data Structures and Algorithms
 - Practice Object-Oriented Programming (OOP) concepts  
 - Explore problem-solving through coding exercises  
 - Build small Java-based projects for hands-on learning  
