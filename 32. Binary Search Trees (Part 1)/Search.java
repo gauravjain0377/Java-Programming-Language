@@ -1,3 +1,5 @@
+// Explanation from notes
+
 public class Search {
     static class Node {
         int data;
