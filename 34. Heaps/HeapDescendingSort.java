@@ -1,31 +1,32 @@
 // Heap sort
 //  Explanation from the notes
-// Heap Sort - In the ascending order (use maxHeap)
+// Heap Sort - In the descending order  (use minHeap)
 
-public class HeapSort {
+public class HeapDescendingSort {
+
     public static void heapify(int arr[], int i, int size) {
         int left = 2 * i + 1;
         int right = 2 * i + 2;
-        int maxIdx = i;
+        int minIdx = i;
 
-        if(left < size && arr[left] > arr[maxIdx]) {
-            maxIdx = left;
+        if(left < size && arr[left] < arr[minIdx]) {
+            minIdx = left;
         }
 
-        if(right < size && arr[right] > arr[maxIdx]) {
-            maxIdx = right;
+        if(right < size && arr[right] < arr[minIdx]) {
+            minIdx = right;
         }
 
-        if(maxIdx != i) {
+        if(minIdx != i) {
             // swap 
             int temp = arr[i];
-            arr[i] = arr[maxIdx];
-            arr[maxIdx] = temp;
+            arr[i] = arr[minIdx];
+            arr[minIdx] = temp;
 
-            heapify(arr, maxIdx, size);
+            heapify(arr, minIdx, size);
         }
     }
-    public static void heapSort(int arr[]) {   // O(nlogn)
+    public static void heapSort(int arr[]) {
         // step 1- build maxHeap 
         int n = arr.length;
         for(int i=n/2; i>=0; i--) {
@@ -53,3 +54,5 @@ public class HeapSort {
         System.out.println();
     }
 }
+
+
