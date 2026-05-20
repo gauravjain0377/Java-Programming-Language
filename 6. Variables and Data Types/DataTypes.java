@@ -13,7 +13,8 @@ public class DataTypes {
         System.out.println(var);
 
         // float data type
-        float price = 900.523f;
+        // float price = (float)9.5;
+        float price = 9.5f;
         System.out.println(price);
 
         // int data type
@@ -21,7 +22,7 @@ public class DataTypes {
         System.out.println(number);
 
         // long data type
-        long Number = 1234678910L;
+        long Number = 1234678910;
         System.out.println(Number);
 
         // double data type

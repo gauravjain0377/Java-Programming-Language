@@ -1,7 +1,7 @@
 public class TernaryOperator {
     public static void main(String[] args) {
         int marks = 33;
-        String type = (marks >= 33 ? "pass" : "fail");
+        String type = (marks >= 53 ? "pass" : "fail");
         System.out.println("You have " + type + " the exam");
 
 

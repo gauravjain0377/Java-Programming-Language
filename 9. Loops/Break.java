@@ -13,7 +13,7 @@ public class Break {
                 System.out.println("Thankyou, " + n + " is a multiple of 10");
                 break;
             }
-            
+            System.out.println(n);
         }
         while(true);
         

@@ -11,8 +11,8 @@ public class Input {
         // int number = scn.nextInt();
         // System.out.println("You entered: " + number);
 
-        // byte number = scn.nextByte();
-        // System.out.println("You entered: " + number);
+        // byte num = scn.nextByte();
+        // System.out.println("You entered: " + num);
 
         System.out.print("Enter a float number:");
         float number = scn.nextFloat();
