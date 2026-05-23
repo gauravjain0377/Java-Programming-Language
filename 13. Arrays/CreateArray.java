@@ -1,4 +1,3 @@
-import java.util.*;
  
 public class CreateArray {
     public static void main(String[] args) {
@@ -12,3 +11,4 @@ public class CreateArray {
 
     }
 }
+

@@ -12,7 +12,7 @@ public class BinarytoDecimal {
             pow++;
             binNum = binNum / 10;
             System.out.println(decNum);
-            
+             
         }
         System.out.println("Decimal of Binary number is: " + decNum);
     }

@@ -1,11 +1,13 @@
 import java.util.*;
+// import java.util.Arrays;
+// import java.util.Collections;
 
 public class InbuiltSort {
 
     public static void main(String[] args) {
         Integer arr[] = { 5, 444, 1, 3, 2, 34, 5443, 2343, 4243, 3443, 34, 533, 4};
         // Arrays.sort(arr);
-        // Arrays.sort(arr, 0, 7);
+        // Arrays.sort(arr, 0, 7);   // Arrays.sort(arr, si, ei)
         // Arrays.sort(arr, Collections.reverseOrder());
         Arrays.sort(arr, 0, 7, Collections.reverseOrder());
         System.out.print("Sorted Array: ");
@@ -15,3 +17,7 @@ public class InbuiltSort {
         System.out.println();
     }    
 }
+
+
+
+

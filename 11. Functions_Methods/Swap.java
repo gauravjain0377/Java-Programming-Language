@@ -13,7 +13,7 @@ public class Swap {
 
     public static void main(String[] args) {
         int a = 5;
-        int b = 8;
+        int b = 8; 
         swap(a,b);
     }
     
