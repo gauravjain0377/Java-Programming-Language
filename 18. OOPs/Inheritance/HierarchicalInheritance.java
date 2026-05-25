@@ -4,6 +4,12 @@ public class HierarchicalInheritance {
         Mammal dog = new Mammal();
         dog.eat();
         dog.breathe();
+        dog.walk();
+    
+        
+        Fish shark = new Fish();
+        shark.breathe();
+        shark.swim();
     }
 }
 

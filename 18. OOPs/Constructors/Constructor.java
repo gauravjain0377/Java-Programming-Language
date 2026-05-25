@@ -1,5 +1,4 @@
 package Constructors;
-import Inheritance.Student;
 
 public class Constructor {
     public static void main(String[] args) {
@@ -15,7 +14,7 @@ class Student {
      int rollNo;
 
     //   Student() {    // Constructor
-    
+            // System.out.println();
     //  }
 
      Student() {   // Constructor

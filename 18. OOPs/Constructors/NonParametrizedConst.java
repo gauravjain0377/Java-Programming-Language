@@ -1,6 +1,4 @@
-import Constructors.Student;
 
-package Inheritance;
 public class NonParametrizedConst {
     public static void main(String[] args) {
         Student s1 = new Student();

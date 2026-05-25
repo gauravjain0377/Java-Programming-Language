@@ -1,6 +1,7 @@
 // Check if a number is a power of 2 or not.
 
-/* 4 = 2 power 2, 
+/* 
+4 = 2 power 2, 
  8  = 2 power 3,
  7 = 2 power => NO, not divisible.
 

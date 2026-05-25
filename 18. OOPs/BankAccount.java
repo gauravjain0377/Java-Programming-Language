@@ -17,6 +17,6 @@ class Account {
     private String password;
 
     public void setPassword(String pwd) {
-        password = pwd;
+        password = pwd; 
     }
 }

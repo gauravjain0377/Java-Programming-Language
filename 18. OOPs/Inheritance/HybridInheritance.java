@@ -1,5 +1,15 @@
 package Inheritance;
-// Example of multilevel + hierarchical inheritance, not hybrid.
+/* Hybrid inheritance means:
+
+Combination of two or more inheritance types
+
+So:
+
+✅ Multiple + Multilevel → Hybrid
+✅ Multiple + Hierarchical → Hybrid
+✅ Multilevel + Hierarchical → Hybrid
+✅ Single + Multilevel → Hybrid
+ */
 
 
 // Does Java support Multiple Inheritance?
@@ -11,6 +21,18 @@ package Inheritance;
 //  Java does NOT support hybrid inheritance using classes either.
 
 // But Java supports hybrid & multiple inheritance using interfaces
+
+
+
+/* Java class support summary:
+
+Single → Yes
+Multilevel → Yes
+Hierarchical → Yes
+Multiple → No
+Hybrid with multiple inheritance → No
+Hybrid without multiple inheritance → Yes
+ */
 
 
 public class HybridInheritance {
