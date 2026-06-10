@@ -3,8 +3,14 @@ public class Interface {
         Queen q = new Queen();
         q.moves();
 
-        // ChessPlayer p = new Queen();  => This is also correct (Better Polymorphic Version)
-        // p.moves();
+        ChessPlayer p = new Queen();  // => This is also correct (Better Polymorphic Version)
+        p.moves();
+
+        ChessPlayer k = new King();  // => This is also correct (Better Polymorphic Version)
+        k.moves();
+
+        ChessPlayer r = new Rook();  // => This is also correct (Better Polymorphic Version)
+        r.moves();
 
     } 
     
@@ -29,6 +35,6 @@ class Rook implements ChessPlayer {
 
 class King implements ChessPlayer {
    public void moves() {
-        System.out.println("up, down, left, right, diagonal (by 1 step");
+        System.out.println("up, down, left, right, diagonal (by 1 step)");
     }
 }

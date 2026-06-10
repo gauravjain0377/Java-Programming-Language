@@ -26,7 +26,6 @@ interface Carnivore {
 class Bear implements Herbivore, Carnivore {
     public void eats() {
         System.out.println("Grass + Meat");
-
     }
 
 }

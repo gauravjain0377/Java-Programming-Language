@@ -1,9 +1,8 @@
 public class AbstractClasswithConstructor {
     public static void main(String[] args) {
         Mustang myHorse = new Mustang();
+        
         // Animal -> Horse -> Mustang
-
-
     }
 }
 

@@ -23,7 +23,7 @@ abstract class Animal {
 
     void eat() {
         System.out.println("animal eats");
-    }
+    } 
 
     abstract void walk();   
 }
@@ -40,7 +40,7 @@ class Horse extends Animal {
 
 class Octopus extends Animal {
      void changeColor() {
-        color = "red";
+        color = "yellow";
     }
 
     void walk() {

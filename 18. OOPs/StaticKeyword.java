@@ -13,7 +13,7 @@ public class StaticKeyword {
        System.out.println(s3.schoolName);
       
     }
-} 
+}
 
 
 class Student {

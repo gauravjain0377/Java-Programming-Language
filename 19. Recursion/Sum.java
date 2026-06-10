@@ -16,6 +16,3 @@ public class Sum {
        System.out.println(Sum(n)); 
     }
 }
-
-
- 

@@ -19,3 +19,11 @@ public class LastOccurence {
       System.out.println(lastOccurence(arr, 5, 0));  
     }
 }
+
+
+
+
+
+
+
+
