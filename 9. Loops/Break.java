@@ -5,7 +5,6 @@ import java.util.*;
 public class Break {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-
         do {
             System.out.print("Enter a number: ");
             int n = scn.nextInt();

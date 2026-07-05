@@ -21,12 +21,12 @@ public class Palindrome {
      public static void main(String[] args) {
          Scanner scn = new Scanner(System.in);
          System.out.print("Enter a Number: ");
-         int palindrome = scn.nextInt();
+         int n = scn.nextInt();
          
-         if(isPalindrome(palindrome)) {
-             System.out.println(palindrome + " is a palindrome");
+         if(isPalindrome(n)) {
+             System.out.println(n+ " is a palindrome");
          } else {
-             System.out.println(palindrome + " is not a palindrome");
+             System.out.println(n + " is not a palindrome");
          }
        
          

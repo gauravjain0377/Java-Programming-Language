@@ -8,6 +8,6 @@ public class ReverseGivenNumber {
         reverse = (reverse * 10) + lastDigit;
         n = n/10;
       }
-System.out.println(reverse);;
+System.out.println(reverse);
     }
 }
