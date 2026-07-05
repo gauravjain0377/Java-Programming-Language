@@ -15,7 +15,6 @@ public class LargestNumber {
                 smallest = numbers[i]; 
             }
         }
-
        
         System.out.println("The smallest number is: " + smallest);
 
