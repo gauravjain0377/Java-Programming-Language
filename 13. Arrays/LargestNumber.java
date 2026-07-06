@@ -42,6 +42,51 @@ public class LargestNumber {
 
 
 
+ /*
+     import java.util.*;
+
+public class LargestNumber {
+
+    public static int[] getLargestSmallest(int numbers[]) {
+        int largest = Integer.MIN_VALUE;
+        int smallest = Integer.MAX_VALUE;
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                largest = numbers[i];
+            }
+
+            if (numbers[i] < smallest) {
+                smallest = numbers[i];
+            }
+        }
+
+        return new int[] { largest, smallest };
+    }
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+
+        System.out.print("Enter the size of an array: ");
+        int size = scn.nextInt();
+
+        int numbers[] = new int[size];
+
+        System.out.print("Enter " + size + " numbers: ");
+        for (int i = 0; i < size; i++) {
+            numbers[i] = scn.nextInt();
+        }
+
+        int[] result = getLargestSmallest(numbers);
+
+        System.out.println("Largest number: " + result[0]);
+        System.out.println("Smallest number: " + result[1]);
+    }
+}
+
+*/
+
+
 
 
 // import java.util.*;

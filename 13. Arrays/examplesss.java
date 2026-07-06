@@ -1,31 +1,24 @@
 import java.util.*;
 
 public class examplesss {
-            public static int binarySearch(int numbers[], int key) {
-                int start = 0;
-                int end = numbers.length - 1;
+    public static int kadanes(int numbers[]) {
+       int cs = 0;
+       int ms = Integer.MIN_VALUE;
 
-                while(start <= end) {
-                    int mid = (start + end) / 2;
-
-                    if(numbers[mid] == key) {
-                        return mid;
-                    }
-                    
-                 if(numbers[mid] < key) {
-                        start = mid + 1;
-                    }
-                    else {
-                        end = mid - 1;
-                    }
-                }
-                return -1;
-            }
-   
-
+       for(int i=0; i<numbers.length; i++) {
+        cs = cs + numbers[i];
+        if(cs < 0) {
+            cs = 0;
+        }
+        ms = Math.max(ms, cs);
+       }
+       return ms;
+        
+    }
+    
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        System.out.print("ENter the size of an array: ");
+        System.out.print("Enter the size of an array: ");
         int size = scn.nextInt();
 
         int[] numbers = new int[size];
@@ -35,15 +28,7 @@ public class examplesss {
             numbers[i] = scn.nextInt();
         }
 
-        System.out.print("Enter key: ");
-        int key = scn.nextInt();
+      System.out.print("Kadanes answer is: " + kadanes(numbers));
 
-        int index = binarySearch(numbers, key);
-        if(index == -1) {
-            System.out.print("Index not found");
-        } else {
-            System.out.println("Found at index " + index);
-        }
-       
     }
 }

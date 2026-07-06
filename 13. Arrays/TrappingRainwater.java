@@ -1,6 +1,6 @@
 public class TrappingRainwater {
 
-    public static int trappedRainwater(int height[]) {
+    public static int trappedRainwater(int height[]) {   // O(n)
         int n = height.length;
         
         // calculate left maximum boundary - array
