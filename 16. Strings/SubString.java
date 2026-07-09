@@ -14,4 +14,4 @@ public class SubString {
 
          System.out.println(subString(str, 0, 5));
     }
-}
+} 
