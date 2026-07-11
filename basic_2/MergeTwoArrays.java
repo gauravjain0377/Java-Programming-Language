@@ -14,7 +14,6 @@ public class MergeTwoArrays {
         for (int i = 0; i < arr2.length; i++) {
             merge[index++] = arr2[i];
         }
-
         return merge;
     }
 
@@ -55,4 +54,3 @@ public class MergeTwoArrays {
         sc.close();
     }
 }
-

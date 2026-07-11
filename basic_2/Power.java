@@ -7,7 +7,6 @@ public class Power {
         for (int i = 1; i <= exponent; i++) {
             result *= base;
         }
-
         return result;
     }
 
