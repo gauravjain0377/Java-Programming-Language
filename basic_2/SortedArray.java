@@ -7,7 +7,6 @@ public class SortedArray {
                 return false;
             }
         }
-
         return true;
     }
 

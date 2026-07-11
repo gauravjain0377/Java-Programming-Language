@@ -1,15 +1,15 @@
 import java.util.*;
 
 public class BinaryToDecimal {
-    public static int binaryToDecimal(int binary) {
+    public static int binaryToDecimal(int n) {
         int decimal = 0;
         int power = 1;
 
-        while (binary > 0) {
-            int lastDigit = binary % 10;
+        while (n > 0) {
+            int lastDigit = n % 10;
             decimal = decimal + (lastDigit * power);
             power *= 2;
-            binary /= 10;
+           n /= 10;
         }
         return decimal;
     }
@@ -17,9 +17,9 @@ public class BinaryToDecimal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter binary number: ");
-        int binary = sc.nextInt();
+        int n = sc.nextInt();
 
-        System.out.println("Decimal = " + binaryToDecimal(binary));
+        System.out.println("Decimal = " + binaryToDecimal(n));
 
         sc.close();
     }
