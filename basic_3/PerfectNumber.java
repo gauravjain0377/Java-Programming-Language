@@ -1,5 +1,16 @@
 // A Perfect Number is a number that is equal to the sum of its proper divisors (excluding the number itself).
+/* 
+Example
+6
+Divisors = 1, 2, 3
+1 + 2 + 3 = 6
+Perfect Number
 
+Another example:
+28
+Divisors = 1, 2, 4, 7, 14
+Sum = 28
+ */
 import java.util.*;
 
 public class PerfectNumber {
