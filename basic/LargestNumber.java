@@ -1,9 +1,7 @@
-package Basic;
+
 import java.util.*;
 
 public class LargestNumber {
-
-    
     public static int getLargest(int numbers[]) {
         int largest = Integer.MIN_VALUE; 
         int smallest = Integer.MAX_VALUE; 

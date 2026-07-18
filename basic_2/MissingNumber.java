@@ -9,7 +9,6 @@ public class MissingNumber {
         for (int i = 0; i < arr.length; i++) {
             actualSum += arr[i];
         }
-
         return expectedSum - actualSum;
     }
 

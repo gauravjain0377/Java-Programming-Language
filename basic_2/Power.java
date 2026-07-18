@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class Power {
+    
     public static int power(int base, int exponent) {
         int result = 1;
 

@@ -1,3 +1,5 @@
+// Remove All Spaces from String
+
 import java.util.*;
 
 public class RemoveSpaceString {

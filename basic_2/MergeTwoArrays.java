@@ -2,7 +2,6 @@ import java.util.*;
 
 public class MergeTwoArrays {
     public static int[] mergeArrays(int[] arr1, int[] arr2) {
-
         int[] merge = new int[arr1.length + arr2.length];
 
         int index = 0;

@@ -7,7 +7,5 @@ public class MyStringBuilder {
         }   // O(26)
         System.out.println(sb);
         System.out.println(sb.length());
-
     }
-    
 }

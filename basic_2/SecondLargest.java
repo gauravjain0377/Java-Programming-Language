@@ -9,16 +9,14 @@ public class SecondLargest {
         int secondLargest = Integer.MIN_VALUE;
 
         for (int i = 0; i < arr.length; i++) {
-
             if (arr[i] > largest) {
                 secondLargest = largest;
                 largest = arr[i];
 
             } else if (arr[i] > secondLargest && arr[i] != largest) {
-                secondLargest = largest;
+                secondLargest = arr[i];
             }
         }
-
         return secondLargest;
     }
 
@@ -37,7 +35,7 @@ public class SecondLargest {
         int ans = secondLargest(arr);
 
         // System.out.print(secondLargest(arr));
-
+ 
         if (ans == Integer.MIN_VALUE)
             System.out.println("Second Largest does not exist");
         else
