@@ -29,6 +29,6 @@ public class Palindrome {
              System.out.println(n + " is not a palindrome");
          }
        
-         
+      scn.close();   
      }
  }

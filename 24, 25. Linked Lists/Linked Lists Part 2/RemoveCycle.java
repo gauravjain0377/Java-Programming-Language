@@ -74,4 +74,4 @@ public class RemoveCycle {
         removeCycle();
         System.out.println(isCycle());
     }
-} 
+}

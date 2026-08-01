@@ -1,21 +1,30 @@
-package Basic;
+// Maximum Subarray Sum problem, known as Kadane's Algorithm.
+
+import java.util.*;
+
 public class Kadane_Algorithm {
 
     public static int kadane(int numbers[]) {
-        int ms = Integer.MIN_VALUE;  // ms = max sum
-        int cs = 0;  // cs = current sum
+        int cs = numbers[0];
+        int ms = numbers[0];
 
-        for(int i=0; i<numbers.length; i++) {
-            cs = cs + numbers[i];
-            if(cs < 0) {
-                cs = 0;
-            }
+        for (int i = 1; i < numbers.length; i++) {
+            cs = Math.max(numbers[i], cs + numbers[i]);
             ms = Math.max(ms, cs);
         }
+
         return ms;
     }
+
     public static void main(String[] args) {
-        int numbers[] = {-2, -3, 4, -1, -2, 1, 5, -3};
-        System.out.println("Max Subarray Sum is: " + kadane(numbers));
+        Scanner scn = new Scanner(System.in);
+
+        int n = scn.nextInt();
+        int numbers[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            numbers[i] = scn.nextInt();
+        }
+
+        System.out.println(kadane(numbers));
     }
 }

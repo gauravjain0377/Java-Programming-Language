@@ -18,7 +18,6 @@ public class AddFirst {
     public static Node tail;
 
     public void addFirst(int data) {
-
         // step 1. Create New Node
         Node newNode = new Node(data);
 

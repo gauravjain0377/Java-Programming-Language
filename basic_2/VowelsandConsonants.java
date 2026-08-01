@@ -17,7 +17,7 @@ public class VowelsandConsonants {
                     consonants++;
                 }
             }
-        }
+        } 
         System.out.println("Vowels = " + vowels);
         System.out.println("Consonants = " + consonants);
     }

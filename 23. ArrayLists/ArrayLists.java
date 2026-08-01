@@ -6,5 +6,5 @@ public class ArrayLists {
 
         ArrayList<String> list2 = new ArrayList<>();
         ArrayList<Boolean> list3 = new ArrayList<>();
-    }
+     }
 }

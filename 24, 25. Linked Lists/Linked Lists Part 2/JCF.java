@@ -17,6 +17,7 @@ public class JCF {
         ll.removeLast();
         ll.removeFirst();
         System.out.println(ll);
+
     }
 }
 
