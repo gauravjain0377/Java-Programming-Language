@@ -57,7 +57,6 @@ public class Armstrong {
 //         int sum = 0;
 
 //         while (n != 0) {
-
 //             int digit = n % 10;
 //             sum += (int) Math.pow(digit, digits);
 //             n /= 10;

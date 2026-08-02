@@ -34,7 +34,7 @@ public class SecondLargest {
 
         int ans = secondLargest(arr);
 
-        // System.out.print(secondLargest(arr));
+    // System.out.print(secondLargest(arr));
  
         if (ans == Integer.MIN_VALUE)
             System.out.println("Second Largest does not exist");
