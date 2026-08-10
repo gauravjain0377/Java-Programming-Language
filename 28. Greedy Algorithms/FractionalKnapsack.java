@@ -14,7 +14,7 @@ public class FractionalKnapsack {
             ratio[i][1] = val[i]/(double)weight[i];
         }
 
-        // ascending order sorting
+        // ascending order sorting 
     Arrays.sort(ratio, Comparator.comparingDouble(o -> o[1]));
 
         int capacity = W;

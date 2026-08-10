@@ -33,3 +33,10 @@ public class BuildTreePreorderTree {
         System.out.println(root.data);
     }
 }
+
+
+
+
+
+
+

@@ -20,4 +20,4 @@ public class MinAbsolutediffPairs {
         }
         System.out.println("min absolute difference of pairs = " + minDiff);
     }
-}  
+} 

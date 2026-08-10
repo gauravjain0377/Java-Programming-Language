@@ -25,7 +25,7 @@ public class BST {
             root.right = insert(root.right, val);
         }
         return root;
-    }
+    } 
 
     public static void inorder(Node root) {
         if(root == null) {
