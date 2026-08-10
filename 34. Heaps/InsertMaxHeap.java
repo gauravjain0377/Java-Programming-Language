@@ -10,7 +10,7 @@ public class InsertMaxHeap {
 
             int x = arr.size() - 1;  // x is child index
             int parent = (x - 1) / 2;  // parent index 
-
+ 
             while(arr.get(x) > arr.get(parent)) {   // O(logn)
                 // swap 
                 int temp = arr.get(x);

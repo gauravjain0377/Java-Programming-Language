@@ -12,8 +12,28 @@ public class Hashing {
 
         System.out.println(hm);
 
+        // remove
+        hm.remove("US");
+        System.out.println(hm);
+
         // Get - O(1)
         int population = hm.get("India");
         System.out.println(population);
+
+        // containsKey - O(1)
+        System.out.println(hm.containsKey("India"));
+        System.out.println(hm.containsKey("Russia"));
+
+        // Size
+        System.out.println(hm.size());
+
+        // clear - to empty the map completely
+        hm.clear();
+        
+        // is empty
+        System.out.print(hm.isEmpty());
+
+        
+       
     }
-}
+}   
