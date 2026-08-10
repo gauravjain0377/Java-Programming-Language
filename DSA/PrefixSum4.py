@@ -21,14 +21,12 @@
 
 
 def subarray_sum(arr, k):
-
     frequency = {0: 1}
 
     prefix_sum = 0
     count = 0
 
     for num in arr:
-
         prefix_sum += num
 
         required = prefix_sum - k
@@ -43,9 +41,7 @@ def subarray_sum(arr, k):
 
     return count
 
-
 n, k = map(int, input().split())
-
 arr = list(map(int, input().split()))
 
 print(subarray_sum(arr, k))

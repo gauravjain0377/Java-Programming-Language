@@ -1,5 +1,4 @@
 n = int(input())
-
 arr = list(map(int, input().split()))
 
 prefix = [0] * n
