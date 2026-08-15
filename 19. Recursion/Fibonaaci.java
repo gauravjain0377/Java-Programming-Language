@@ -11,7 +11,6 @@ public class Fibonaaci {
         int f2 = fibonacci(n - 2);
         int fn = fibonacci(n - 1) + fibonacci(n - 2);
         return fn;
-
     }
     public static void main(String[] args) {
         int n = 10;
