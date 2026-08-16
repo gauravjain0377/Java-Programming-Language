@@ -1,23 +1,16 @@
-// Two Pointers Approach
-// Move All Zeros to End
-
 import java.util.*;
 
-public class MoveAllZerosToEnd {
+public class RightRotate {
 
-    public static void moveZeros(int[] nums) {
-        int j = 0;
+    public static void rightRotate(int[] nums) {
 
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != 0) {
+        int last = nums[nums.length - 1];
 
-                int temp = nums[i];
-                nums[i] = nums[j];
-                nums[j] = temp;
-
-                j++;
-            }
+        for (int i = nums.length - 1; i > 0; i--) {
+            nums[i] = nums[i - 1];
         }
+
+        nums[0] = last;
     }
 
     public static void main(String[] args) {
@@ -30,7 +23,7 @@ public class MoveAllZerosToEnd {
             nums[i] = scn.nextInt();
         }
 
-        moveZeros(nums);
+        rightRotate(nums);
 
         for (int i = 0; i < n; i++) {
             System.out.print(nums[i] + " ");

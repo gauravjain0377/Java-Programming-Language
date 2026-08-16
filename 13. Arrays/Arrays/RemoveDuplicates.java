@@ -27,7 +27,6 @@ public class RemoveDuplicates {
         }
 
         int k = removeDuplicates(nums);
-        System.out.println(k);
 
         for(int i=0; i<k; i++) {
             System.out.print(nums[i] + " ");

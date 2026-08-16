@@ -24,6 +24,8 @@ public class CheckArraySortedRotated {
             nums[i] = scn.nextInt();
         }
 
+       // System.out.print(check(nums));
+
         boolean result = check(nums);
         System.out.print(result);
     }

@@ -1,9 +1,10 @@
 // Rotate Array
 // Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+// Right Rotate Array by K Places
 
 import java.util.*;
 
-public class RotateArray {
+public class RotateArrayRightKSteps {
 
     public static void reverse(int[] nums, int start, int end) {
         while (start < end) {
@@ -17,12 +18,12 @@ public class RotateArray {
     } 
 
     public static void rotate(int[] nums, int k) {
+        int n = nums.length;
+        k = k % n;
 
-        k = k % nums.length;
-
-        reverse(nums, 0, nums.length - 1);
+        reverse(nums, 0, n - 1);
         reverse(nums, 0, k - 1);
-        reverse(nums, k, nums.length - 1);
+        reverse(nums, k, n - 1);
     }
 
     public static void main(String[] args) {
