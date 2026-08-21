@@ -18,7 +18,6 @@ The element 7 is common to both, 3, 4, 6, 9 are from nums1 and 1, 5, 8 is from n
 import java.util.*;
 
 public class UnionArrays {
-
     public static ArrayList<Integer> union(int[] nums1, int[] nums2) {
 
         ArrayList<Integer> result = new ArrayList<>();
